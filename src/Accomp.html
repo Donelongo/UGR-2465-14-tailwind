@@ -4,83 +4,257 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/x-icon" href="./Images/name-logo.png">
-    <title>Accomplishemnts</title>
+    <script src="http://cdn.tailwindcss.com"></script>
+    <title>Home</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- icon -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
-<body>
-    <header>
-        <div class="logo-image">
-            <img src="/src/Images/name-logo.png" alt="Me">
-        </div>
-        <nav class="Navbar">
-            <ul>
-                <li><a href="/src/Home.html">Home</a></li>
-                <li><a href="/src/Accomp.html">Accomplishemnts</a></li>
-                <li><a href="/src/Hobbies.html">Hobbies</a></li>
-                <li><a href="/src/Travels.html">Travels</a></li>
-                <li><a href="/src/Photography.html">Photography</a></li>
-            </ul>
+<body class="font-[Poppins] bg-zinc-800 h-screen">
+    <header class="bg-black">
+        <nav class="flex justify-between items-center w-[92%] mx-auto">
+            <div>
+                <img class="w-20" src="/src/Images/name-logo.png" alt="Me">
+            </div>
+            <div class="nav-links md:static absolute bg-black md:min-h-fit min-h-[40vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-5">
+                <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
+                    <li>
+                        <a class="hover:text-gray-500 text-white" href="/src/Home.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500 text-amber-500" href="/src/Accomp.html">Accomplishemnts</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500 text-white" href="/src/Hobbies.html">Hobbies</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500 text-white" href="/src/Travels.html">Travels</a
+                        ></li>
+                    <li>
+                        <a class="hover:text-gray-500 text-white" href="/src/Photography.html">Photography</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex items-center gap-6">
+                <svg onclick="onToggleMenu(this)" class="text-3xl cursor-pointer md:hidden" xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path fill="#ffffff" d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>            </div>
         </nav>
     </header>
     <main>
-        <h1>Education</h1>
-        <div id="first-accomplishment">
-            <img src="/src/Images/Cisco_networking.png" alt="accmplishment image">
-            <aside>
-                <h2>Cisco Networking Academy</h2>
-                <p>
-                    I earned my Cisco Academy certificate by completing rigorous courses and passing certification exams through the Cisco Networking Academy. This comprehensive training equipped me with valuable networking skills, paving the way for career advancement in the tech industry.
-                </p>
-            </aside>
-        </div>
-        <div id="second-accomplishment">
-            <img src="/src/Images/cisco_PT.png" alt="accomplishment image">
-            <aside>
-                <h2>Cisco Packet Tracer</h2>
-                <p>
-                    
-I obtained my Cisco Packet Tracer certification by engaging in extensive coursework and successfully passing assessments offered through the Cisco Networking Academy. This immersive training equipped me with hands-on experience in network simulation, strengthening my proficiency in networking technologies essential for real-world applications within the tech industry.
-                </p>
-            </aside>
-        </div>
-        <div id="third-accomplishment">
-            <img src="/src/Images/Redhat.png" alt="accomplishment image">
-            <aside>
-                <h2>Redhat</h2>
-                <p>
-                    I earned my Redhat certificate by completing rigorous courses and passing certification exams through the Redhat Academy. This comprehensive training equipped me with valuable Linux skills, paving the way for career advancement in the tech industry.
-                </p>
-            </aside>
-        </div>
-        <h1>Extra-curriculum</h1>
-        <div id="first-extra-accomplishment">
-            <img src="/src/Images/tasties_basketball.jpg" alt="accomplishment image">
-            <aside>
-                <h2>Tasties Basketball Acadamy</h2>
-                <p>
-                    I was a member of the Tasties Basketball Academy for 1 years. I was a member of the team that won the 2018/19 Ethiopian Basketball Federation (EBF) U-18 championship. I was also a member of the team that won the 2019/20 EBF U-20 championship.
-                </p>
-            </aside>
-        </div>
-    </main>
-    <footer>
-        <div class="socialmedia">
-            <div class="icon">
-                <a href="https://www.instagram.com/dagmawi_elias/"><img src="/src/Images/instagram.svg" alt="Instagram Icon"></a>
-            </div>
-            <div class="icon">
-                <a href="https://twitter.com/elias_dagmawi"><img src="/src/Images/twitter.svg" alt="Twitter Icon"></a>
-            </div>
-            <div class="icon">
-                <a href="https://www.linkedin.com/in/dagmawi-elias-842699242/"><img src="/src/Images/linkedin.svg" alt="Linkedin Icon"></a>
-            </div>
-        </div>
 
-        <div class="contact">
-                <div class="Name">Dagmawi Elias</div>
-                <div class="Phone Number"><img src="/src/Images/phone-solid.svg" alt="phone logo"></div>
-                <div class="email"><img src="/src/Images/at-solid.svg" alt="@ logo"></div>
-                <div class="address"><img src="/src/Images/location-dot-solid.svg" alt="location logo"></div>
+        <div>
+            <h1 class="text-4xl lg:text-5xl text-white text-center mt-5">Education</h1>
+            <div class="grid lg:grid-cols-2 gap-8 items-center mt-8" id="first-accomplishment">
+                <figure class="lg:order-2">
+                    <a href="/src/Images/Cisco_networking.png">
+                        <img src="/src/Images/Cisco_networking.png" class="p-3" alt="accomplishment image">
+                    </a>
+                    <figcaption class="text-blue-500 text-center">Fig: Cisco Networking Academy Certificate</figcaption>
+                </figure>
+                <aside class="lg:order-2">
+                    <h2 class="text-3xl lg:text-4xl text-white  text-center">Cisco Networking Academy</h2>
+                    <p class="text-white text-lg lg:text-xl pl-3 pr-2">
+                        <span class="text-4xl lg:text-6xl uppercase text-yellow-500">I</span> earned my Cisco Academy certificate by completing rigorous courses and passing certification exams through the Cisco Networking Academy. This comprehensive training equipped me with valuable networking skills, paving the way for career advancement in the tech industry.
+                    </p>
+                </aside>
+            </div>
         </div>
-    </footer>
+    
+        <div class="lg:hidden">
+            <div class="grid lg:grid-cols-2 gap-8 items-center" id="second-accomplishment">
+                <figure>
+                    <a href="/src/Images/cisco_PT.png">
+                        <img src="/src/Images/cisco_PT.png" class="p-3" alt="accomplishment image">
+                    </a>
+                    <figcaption class="text-blue-500 text-center">Fig: Cisco Packet Tracer Certificate</figcaption>
+                </figure>
+                <aside>
+                    <h2 class="text-3xl lg:text-4xl text-white text-center">Cisco Packet Tracer</h2>
+                    <p class="text-white text-lg lg:text-xl pl-3 pr-2">
+                        <span class="text-4xl lg:text-6xl uppercase text-yellow-500">I</span> obtained my Cisco Packet Tracer certification by engaging in extensive coursework and successfully passing assessments offered through the Cisco Networking Academy. This immersive training equipped me with hands-on experience in network simulation, strengthening my proficiency in networking technologies essential for real-world applications within the tech industry.
+                    </p>
+                </aside>
+            </div>
+        </div>
+    
+        <div class="hidden lg:block">
+            <div class="grid lg:grid-cols-2 gap-8 items-center" id="second-accomplishment-reversed">
+                <aside>
+                    <h2 class="text-3xl lg:text-4xl text-center lg:text-left text-white">Cisco Packet Tracer</h2>
+                    <p class="text-white text-lg lg:text-xl pl-3 pr-2">
+                        <span class="text-4xl lg:text-6xl uppercase text-yellow-500">I</span> obtained my Cisco Packet Tracer certification by engaging in extensive coursework and successfully passing assessments offered through the Cisco Networking Academy. This immersive training equipped me with hands-on experience in network simulation, strengthening my proficiency in networking technologies essential for real-world applications within the tech industry.
+                    </p>
+                </aside>
+                <figure>
+                    <a href="/src/Images/cisco_PT.png">
+                        <img src="/src/Images/cisco_PT.png" class="p-3" alt="accomplishment image">
+                    </a>
+                    <figcaption class="text-blue-500 text-center">Fig: Cisco Packet Tracer Certificate</figcaption>
+                </figure>
+            </div>
+        </div>
+    
+        <div>
+            <div class="grid lg:grid-cols-2 gap-8 items-center" id="third-accomplishment">
+                <figure>
+                    <a href="/src/Images/Redhat.png">
+                        <img src="/src/Images/Redhat.png" class="p-3" alt="accomplishment image">
+                    </a>
+                    <figcaption class="text-blue-500 text-center">Fig: Redhat Certificate</figcaption>
+                </figure>
+                <aside>
+                    <h2 class="text-3xl lg:text-4xl text-center lg:text-left text-white">Redhat</h2>
+                    <p class="text-white text-lg lg:text-xl pl-3 pr-2">
+                        <span class="text-4xl lg:text-6xl uppercase text-yellow-500">I</span> earned my Redhat certificate by completing rigorous courses and passing certification exams through the Redhat Academy. This comprehensive training equipped me with valuable Linux skills, paving the way for career advancement in the tech industry.
+                    </p>
+                </aside>
+            </div>
+        </div>
+    
+        <h2 class="text-2xl lg:text-4xl text-white text-center mt-5">My Education in Table</h2>
+    
+        <div class="lg:mx-24 mt-5">
+            <table class="table-auto w-full bg-transparent border border-white text-white">
+                <thead>
+                    <tr>
+                        <th class="border border-white py-2 px-4">Level</th>
+                        <th class="border border-white py-2 px-4">School</th>
+                        <th class="border border-white py-2 px-4">Year</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="border border-white py-2 px-4">UKG/KG</td>
+                        <td class="border border-white py-2 px-4">St.Mary</td>
+                        <td class="border border-white py-2 px-4">2006</td>
+                    </tr>
+                    <tr>
+                        <td class="border border-white py-2 px-4">Primary school</td>
+                        <td class="border border-white py-2 px-4">Lideta Catholic Cathedral School</td>
+                        <td class="border border-white py-2 px-4">2009</td>
+                    </tr>
+                    <tr>
+                        <td class="border border-white py-2 px-4">Secondary/High school</td>
+                        <td class="border border-white py-2 px-4">Lideta Catholic Cathedral School</td>
+                        <td class="border border-white py-2 px-4">2018</td>
+                    </tr>
+                    <tr>
+                        <td class="border border-white py-2 px-4">University</td>
+                        <td class="border border-white py-2 px-4">Addis Ababa University</td>
+                        <td class="border border-white py-2 px-4">2022</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    
+        <div>
+            <h1 class="text-4xl lg:text-5xl text-white text-center mt-5">Extra-curriculum</h1>
+
+                <div class="hidden lg:block">
+                    <div class="grid lg:grid-cols-2 gap-8 items-center mt-8" id="first-extra-accomplishment-reversed">
+                        <aside>
+                            <h2 class="text-3xl lg:text-4xl text-center lg:text-left text-white">Tasties Basketball Academy</h2>
+                            <p class="text-white text-lg lg:text-xl pl-3 pr-2">
+                                <span class="text-4xl lg:text-6xl uppercase text-yellow-500">I</span> was a member of the Tasties Basketball Academy for 1 year. I was a member of the team that won the 2018/19 Ethiopian Basketball Federation (EBF) U-18 championship. I was also a member of the team that won the 2019/20 EBF U-20 championship.
+                            </p>
+                        </aside>
+                        <figure>
+                            <a href="/src/Images/tasties_basketball.jpg">
+                                <img src="/src/Images/tasties_basketball.jpg" class="p-3" alt="accomplishment image">
+                            </a>
+                            <figcaption class="text-blue-500 text-center">Fig: Tasties Basketball Academy</figcaption>
+                        </figure>
+                    </div>
+                </div>
+
+                <div class="lg:hidden">
+                    <div class="grid gap-8 items-center" id="first-extra-accomplishment">
+                        <figure>
+                            <a href="/src/Images/tasties_basketball.jpg">
+                                <img src="/src/Images/tasties_basketball.jpg" class="p-3" alt="accomplishment image">
+                            </a>
+                            <figcaption class="text-blue-500 text-center">Fig: Tasties Basketball Academy</figcaption>
+                        </figure>
+                        <aside>
+                            <h2 class="text-3xl lg:text-4xl text-center lg:text-left text-white text-center">Tasties Basketball Academy</h2>
+                            <p class="text-white text-lg lg:text-xl pl-3 pr-2 ml-3">
+                                <span class="text-4xl lg:text-6xl uppercase text-yellow-500">I</span> was a member of the Tasties Basketball Academy for 1 year. I was a member of the team that won the 2018/19 Ethiopian Basketball Federation (EBF) U-18 championship. I was also a member of the team that won the 2019/20 EBF U-20 championship.
+                            </p>
+                        </aside>
+                    </div>
+                </div>
+        
+            </div>
+        </main>
+        
+    
+        <footer class="footer bg-gray-500 grid grid-cols-2 gap-4 mt-6 pt-6 pb-6 hidden sm:grid">
+            <div class="grid gap-4">
+                <div class="grid grid-cols-3 gap-4">
+                    <a href="https://www.instagram.com/dagmawi_elias/" class="col-span-1 ">
+                        <img src="/src/Images/instagram.svg" class="w-12 m-auto" alt="Instagram Icon">
+                    </a>
+                    <a href="https://twitter.com/elias_dagmawi" class="col-span-1">
+                        <img src="/src/Images/twitter.svg" class="w-12 m-auto" alt="Twitter Icon">
+                    </a>
+                    <a href="https://www.linkedin.com/in/dagmawi-elias-842699242/" class="col-span-1">
+                        <img src="/src/Images/linkedin.svg" class="w-12 m-auto alt="Linkedin Icon">
+                    </a>
+                </div>
+            </div>
+        
+            <div class="grid gap-4">
+                <div class="flex items-center gap-2">
+                    <img src="/src/Images/phone-solid.svg" class="w-8" alt="phone logo">
+                    <a href="tel:+251-911-110-650" class="text-gray-300 underline">Phone Number: +(251) 911-1106-50</a>
+                </div>
+                <div class="flex items-center gap-2">
+                    <img src="/src/Images/at-solid.svg" class="w-8" alt="@ logo">
+                    <a href="mailto:dagmawielias2@gmail.com" class="text-gray-300 underline">dagmawielias2@gmail.com</a> 
+                </div>
+                <div class="flex items-center gap-2">
+                    <img src="/src/Images/location-dot-solid.svg" class="w-8" alt="location logo">
+                    <a href="https://maps.app.goo.gl/nqPtWeyDfjUmK8TCA" class="text-gray-300 underline">
+                        Addis Ababa Institute of Technology
+                    </a>
+                </div>
+            </div>
+        </footer>
+        
+        <footer class="footer bg-gray-500 grid grid-cols-1 mt-6 p-0 pt-6 pb-6 sm:hidden">
+            <div class="grid gap-4">
+                <div class="grid grid-cols-3 gap-4">
+                    <a href="https://www.instagram.com/dagmawi_elias/" class="col-span-1">
+                        <img src="/src/Images/instagram.svg" class="w-8 mx-5" alt="Instagram Icon">
+                    </a>
+                    <a href="https://twitter.com/elias_dagmawi" class="col-span-1">
+                        <img src="/src/Images/twitter.svg" class="w-8 mx-5" alt="Twitter Icon">
+                    </a>
+                    <a href="https://www.linkedin.com/in/dagmawi-elias-842699242/" class="col-span-1">
+                        <img src="/src/Images/linkedin.svg" class="w-8 mx-5" alt="Linkedin Icon">
+                    </a>
+                </div>
+                <div class="grid grid-cols-1 gap-4 ml-4">
+                    <div class="flex items-center gap-2 mb-4">
+                        <img src="/src/Images/phone-solid.svg" class="w-6" alt="phone logo">
+                        <a href="tel:+251-911-110-650" class="text-gray-300 underline">Phone Number: +(251) 911-1106-50</a>
+                    </div>
+                    <div class="flex items-center gap-2 mb-4">
+                        <img src="/src/Images/at-solid.svg" class="w-6" alt="@ logo">
+                        <a href="mailto:dagmawielias2@gmail.com" class="text-gray-300 underline">dagmawielias2@gmail.com</a> 
+                    </div>
+                    <div class="flex items-center gap-2 mb-4">
+                        <img src="/src/Images/location-dot-solid.svg" class="w-6" alt="location logo">
+                        <a href="https://maps.app.goo.gl/nqPtWeyDfjUmK8TCA" class="text-gray-300 underline">
+                            Addis Ababa Institue of Technology
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    <script src="/JavaScript/Navigation.js"></script>
 </body>
 </html>

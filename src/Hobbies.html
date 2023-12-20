@@ -4,94 +4,159 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/x-icon" href="./Images/name-logo.png">
-    <title>Hobbies</title>
+    <script src="http://cdn.tailwindcss.com"></script>
+    <title>Home</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- icon -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
-<body>
-    <header>
-        <div class="logo-image">
-            <img src="/src/Images/name-logo.png" alt="Me">
-        </div>
-            <nav class="Navbar">
-                <ul>
-                    <li><a href="/src/Home.html">Home</a></li>
-                    <li><a href="/src/Accomp.html">Accomplishemnts</a></li>
-                    <li><a href="/src/Hobbies.html">Hobbies</a></li>
-                    <li><a href="/src/Travels.html">Travels</a></li>
-                    <li><a href="/src/Photography.html">Photography</a></li>
+<body class="font-[Poppins] bg-zinc-800 h-screen">
+    <header class="bg-black">
+        <nav class="flex justify-between items-center w-[92%] mx-auto">
+            <div>
+                <img class="w-20" src="/src/Images/name-logo.png" alt="Me">
+            </div>
+            <div class="nav-links md:static absolute bg-black md:min-h-fit min-h-[40vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-5">
+                <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
+                    <li>
+                        <a class="hover:text-gray-500 text-white" href="/src/Home.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500 text-white" href="/src/Accomp.html">Accomplishemnts</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500 text-amber-500" href="/src/Hobbies.html">Hobbies</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500 text-white" href="/src/Travels.html">Travels</a
+                        ></li>
+                    <li>
+                        <a class="hover:text-gray-500 text-white" href="/src/Photography.html">Photography</a>
+                    </li>
                 </ul>
+            </div>
+            <div class="flex items-center gap-6">
+                <svg onclick="onToggleMenu(this)" class="text-3xl cursor-pointer md:hidden" xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path fill="#ffffff" d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>            </div>
         </nav>
     </header>
-    <main>
-        <aside>
-            <p>
-                Among my many hobbies, I've singled out four that truly resonate with me. Reading offers diverse perspectives, while photography lets me artistically capture moments. Cooking is a creative outlet, where I experiment with flavors and techniques. Lastly, hiking reconnects me with nature, providing both physical activity and serene moments of tranquility.
+    <main class="main grid lg:grid-cols-3 gap-4 lg:gap-4 mt-3 lg:pl-5 lg:pr-3">
+        <aside class="lg:order-1 lg:col-span-1 flex justify-center lg:justify-start lg:items-center">
+            <p class="text-gray-300 text-lg lg:text-xl lg:w-4/5 pl-5 pr-5">
+                <span class="text-2xl lg:text-4xl uppercase text-yellow-500">A</span>mong my many hobbies, I've singled out four that truly resonate with me. Reading offers diverse perspectives, while photography lets me artistically capture moments. Cooking is a creative outlet, where I experiment with flavors and techniques. Lastly, hiking reconnects me with nature, providing both physical activity and serene moments of tranquility.
             </p>
         </aside>
-        <div id="first-hobbie">
-            <img id="hobbie-image" src="/src/Images/basketball-solid.svg" alt="hobbies logo">
-            <aside>
-                <h2>Basketball</h2>
-                <p>    
-                    Basketball is more than a hobby for me; it's a passion that fuels my spirit. The game's rhythm and teamwork invigorate me, teaching resilience and strategy. Every dribble and shot is a chance to improve skills and embrace competition. On the court, I find joy, camaraderie, and an outlet for both physical activity and mental focus.
-                </p>
-            </aside>
-        </div>
-        <div id="second-hobbie">
-            <img id="hobbie-image-2" src="/src/Images/camera-solid.svg" alt="hobbies logo">
-            <h2>Photography</h2>
-            <aside>
-                <p>           
-                    Photography is my lens to the world, a hobby turned passion. Through the camera's eye, I capture stories, emotions, and fleeting moments. Exploring different angles and settings, I unravel the beauty in everyday scenes. Each click is a creative expression, a way to freeze time and share unique perspectives. In photography, I find an art form that allows me to convey emotions without words.
-                </p>
-            </aside>
-        </div>
-        <div id="third-hobbie">
-            <img id="hobbie-image-3" src="/src/Images/screwdriver-wrench-solid.svg" alt="hobbies logo">
-            <h2>Fixing Things</h2>
-            <aside>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Eos harum nisi consectetur laborum quis, earum sequi?
-                    Laudantium praesentium, odit omnis distinctio quis velit cum?
-                    Libero maxime neque repellendus aut doloribus ipsam beatae?
-                    Expedita expidlicabo laborum tempore maxime atque tenetur minus.
-                    Sed, repellendus voluptas corrupti officia quibusdam aliquam dolore.
-                    Non corporis officia, vero autem possimus eius rem.
-                    Ad libero eum omnis sapiente dignissimos molestiae incidunt?
-                    Repudiandae, placeat! Dicta labore alias iusto reiciendis quis!
-                    Ullam incidunt, blanditiis cupiditate accusantium quos pariatur officia.
-                </p>
-            </aside>
-        </div>
-        <div id="fourth-hobbie" >
-            <img id="hobbie-image-4" src="/src/Images/church-solid.svg" alt="hobbies logo">
-            <h2>Church Activities</h2>
-            <aside>
-                <p>                
-                    Fixing things is my hands-on passion, an art of problem-solving in the tangible world. Whether it's a malfunctioning gadget or a broken item, I revel in the challenge of restoring functionality. It's a journey of exploration, using tools and techniques to unravel the mystery behind each issue. With each successful repair, I not only mend objects but also boost my confidence in tackling unforeseen challenges.
-                </p>
-            </aside>
+        
+    
+        <div class="p-5 lg:pr-0 lg:order-2 lg:col-span-2">
+            <div class="lg:flex lg:flex-col lg:gap-4">
+                <div class="lg:flex lg:flex-row lg:gap-4">
+                    <div id="first-hobbie" class="bg-gray-500 rounded-lg p-4 lg:flex-1">
+                        <img id="hobbie-image" src="/src/Images/basketball-solid.svg" class="w-12 h-12 lg:w-16 lg:h-16 left-0 image is-48x48 m-2 transition duration-300 transform hover:scale-110" alt="hobbies logo">
+                        <h2 class="text-center text-black text-3xl lg:text-4xl mt-2">Basketball</h2>
+                        <p class="text-gray-300 text-lg lg:text-xl pl-3 pr-2">    
+                            <span class="text-2xl lg:text-4xl uppercase text-yellow-500">B</span>asketball is more than a hobby for me; it's a passion that fuels my spirit. The game's rhythm and teamwork invigorate me, teaching resilience and strategy. Every dribble and shot is a chance to improve skills and embrace competition. On the court, I find joy, camaraderie, and an outlet for both physical activity and mental focus. It's an arena where I learn the values of discipline, perseverance, and the exhilaration of pushing past limits, striving to constantly evolve and contribute to a collective goal. Basketball is where I can find peace of mind and body; it's amazing.
+                        </p>
+                    </div>
+    
+                    <div id="second-hobbie" class="bg-gray-500 rounded-lg p-4 lg:flex-1 mt-4 lg:mt-0">
+                        <img id="hobbie-image-2" src="/src/Images/camera-solid.svg" class="w-12 h-12 lg:w-16 lg:h-16 left-0 image is-48x48 m-2 transition duration-300 transform hover:scale-110" alt="hobbies logo">
+                        <h2 class="text-center text-black text-3xl lg:text-4xl mt-2">Photography</h2>
+                        <p class="text-gray-300 text-lg lg:text-xl pl-3 pr-2">           
+                            <span class="text-2xl lg:text-4xl uppercase text-yellow-500">P</span>hotography is my lens to the world, a hobby turned passion. Through the camera's eye, I capture stories, emotions, and fleeting moments. Exploring different angles and settings, I unravel the beauty in everyday scenes. Each click is a creative expression, a way to freeze time and share unique perspectives. In photography, I find an art form that allows me to convey emotions without words. It's a journey that continually teaches me to see beyond the surface, to appreciate the intricate details that make life extraordinary, and to immortalize the essence of every moment.
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="lg:flex lg:flex-row lg:gap-4 mt-4">
+                    <div id="third-hobbie" class="bg-gray-500 rounded-lg p-4 lg:flex-1">
+                        <img id="hobbie-image-3" src="/src/Images/screwdriver-wrench-solid.svg" class="w-12 h-12 lg:w-16 lg:h-16 left-0 image is-48x48 m-2 transition duration-300 transform hover:scale-110" alt="hobbies logo">
+                        <h2 class="text-center text-black text-3xl lg:text-4xl mt-2">Fixing Things</h2>
+                        <p class="text-gray-300 text-lg lg:text-xl pl-3 pr-2">
+                            <span class="text-2xl lg:text-4xl uppercase text-yellow-500">F</span>ixing things is my hands-on passion, an art of problem-solving in the tangible world. Whether it's a malfunctioning gadget or a broken item, I revel in the challenge of restoring functionality. It's a journey of exploration, using tools and techniques to unravel the mystery behind each issue. With each successful repair, I not only mend objects but also boost my confidence in tackling unforeseen challenges. It's about more than just fixing; it's about the satisfaction of breathing new life into something broken and the continual growth of my skills and knowledge.
+                        </p>
+                    </div>
+    
+                    <div id="fourth-hobbie" class="bg-gray-500 rounded-lg p-4 lg:flex-1 mt-4 lg:mt-0">
+                        <img id="hobbie-image-4" src="/src/Images/church-solid.svg" class="w-12 h-12 lg:w-16 lg:h-16 left-0 image is-48x48 m-2 transition duration-300 transform hover:scale-110" alt="hobbies logo">
+                        <h2 class="text-center text-black text-3xl lg:text-4xl mt-2">Church Activities</h2>
+                        <p class="text-gray-300 text-lg lg:text-xl pl-3 pr-2">                
+                            <span class="text-2xl lg:text-4xl uppercase text-yellow-500">S</span>erving at church holds a profound place in my life, a way to give back and connect with my community. Engaging in various church activities isn't just a commitment; it's a source of fulfillment. Whether it's volunteering for outreach programs or contributing to the worship team, each moment spent serves a purpose beyond oneself. It's about fostering unity, extending a helping hand, and being part of something larger than life—an invaluable experience that enriches both heart and soul. It is where I feel peace of heart and mind. It is a place I call my home away from home.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
-    <footer>
-        <div class="socialmedia">
-            <div class="icon">
-                <a href="https://www.instagram.com/dagmawi_elias/"><img src="/src/Images/instagram.svg" alt="Instagram Icon"></a>
-            </div>
-            <div class="icon">
-                <a href="https://twitter.com/elias_dagmawi"><img src="/src/Images/twitter.svg" alt="Twitter Icon"></a>
-            </div>
-            <div class="icon">
-                <a href="https://www.linkedin.com/in/dagmawi-elias-842699242/"><img src="/src/Images/linkedin.svg" alt="Linkedin Icon"></a>
+    
+    
+    <footer class="footer bg-gray-500 grid grid-cols-2 gap-4 mt-6 pt-6 pb-6 hidden sm:grid">
+        <div class="grid gap-4">
+            <div class="grid grid-cols-3 gap-4">
+                <a href="https://www.instagram.com/dagmawi_elias/" class="col-span-1 ">
+                    <img src="/src/Images/instagram.svg" class="w-12 m-auto" alt="Instagram Icon">
+                </a>
+                <a href="https://twitter.com/elias_dagmawi" class="col-span-1">
+                    <img src="/src/Images/twitter.svg" class="w-12 m-auto" alt="Twitter Icon">
+                </a>
+                <a href="https://www.linkedin.com/in/dagmawi-elias-842699242/" class="col-span-1">
+                    <img src="/src/Images/linkedin.svg" class="w-12 m-auto alt="Linkedin Icon">
+                </a>
             </div>
         </div>
-
-        <div class="contact">
-                <div class="Name">Dagmawi Elias</div>
-                <div class="Phone Number"><img src="/src/Images/phone-solid.svg" alt="phone logo"></div>
-                <div class="email"><img src="/src/Images/at-solid.svg" alt="@ logo"></div>
-                <div class="address"><img src="/src/Images/location-dot-solid.svg" alt="location logo"></div>
+    
+        <div class="grid gap-4">
+            <div class="flex items-center gap-2">
+                <img src="/src/Images/phone-solid.svg" class="w-8" alt="phone logo">
+                <a href="tel:+251-911-110-650" class="text-gray-300 underline">Phone Number: +(251) 911-1106-50</a>
+            </div>
+            <div class="flex items-center gap-2">
+                <img src="/src/Images/at-solid.svg" class="w-8" alt="@ logo">
+                <a href="mailto:dagmawielias2@gmail.com" class="text-gray-300 underline">dagmawielias2@gmail.com</a> 
+            </div>
+            <div class="flex items-center gap-2">
+                <img src="/src/Images/location-dot-solid.svg" class="w-8" alt="location logo">
+                <a href="https://maps.app.goo.gl/nqPtWeyDfjUmK8TCA" class="text-gray-300 underline">
+                    Addis Ababa Institute of Technology
+                </a>
+            </div>
         </div>
     </footer>
+    
+    <footer class="footer bg-gray-500 grid grid-cols-1 mt-6 p-0 pt-6 pb-6 sm:hidden">
+        <div class="grid gap-4">
+            <div class="grid grid-cols-3 gap-4">
+                <a href="https://www.instagram.com/dagmawi_elias/" class="col-span-1">
+                    <img src="/src/Images/instagram.svg" class="w-8 mx-5" alt="Instagram Icon">
+                </a>
+                <a href="https://twitter.com/elias_dagmawi" class="col-span-1">
+                    <img src="/src/Images/twitter.svg" class="w-8 mx-5" alt="Twitter Icon">
+                </a>
+                <a href="https://www.linkedin.com/in/dagmawi-elias-842699242/" class="col-span-1">
+                    <img src="/src/Images/linkedin.svg" class="w-8 mx-5" alt="Linkedin Icon">
+                </a>
+            </div>
+            <div class="grid grid-cols-1 gap-4 ml-4">
+                <div class="flex items-center gap-2 mb-4">
+                    <img src="/src/Images/phone-solid.svg" class="w-6" alt="phone logo">
+                    <a href="tel:+251-911-110-650" class="text-gray-300 underline">Phone Number: +(251) 911-1106-50</a>
+                </div>
+                <div class="flex items-center gap-2 mb-4">
+                    <img src="/src/Images/at-solid.svg" class="w-6" alt="@ logo">
+                    <a href="mailto:dagmawielias2@gmail.com" class="text-gray-300 underline">dagmawielias2@gmail.com</a> 
+                </div>
+                <div class="flex items-center gap-2 mb-4">
+                    <img src="/src/Images/location-dot-solid.svg" class="w-6" alt="location logo">
+                    <a href="https://maps.app.goo.gl/nqPtWeyDfjUmK8TCA" class="text-gray-300 underline">
+                        Addis Ababa Institue of Technology
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="/JavaScript/Navigation.js"></script>
 </body>
 </html>
