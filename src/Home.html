@@ -20,8 +20,8 @@
             <div>
                 <img class="w-20" src="/src/Images/name-logo.png" alt="Me">
             </div>
-            <div class="nav-links md:static absolute bg-black md:min-h-fit min-h-[40vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-5">
-                <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
+            <div class="nav-links md:static absolute bg-black md:min-h-fit min-h-[50vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-10">
+                <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-10">
                     <li>
                         <a class="hover:text-gray-500 text-amber-500" href="/src/Home.html">Home</a>
                     </li>
@@ -39,27 +39,29 @@
                     </li>
                 </ul>
             </div>
-            <div class="flex items-center gap-6">
+            <div class="flex items-center gap-6 ">
                 <svg onclick="onToggleMenu(this)" class="text-3xl cursor-pointer md:hidden" xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path fill="#ffffff" d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>            </div>
         </nav>
     </header>
-    <main class="m-5">
-        <div class="md:flex">
-            <img  class="bg-contain mx-auto md:growth-1" src="/src/Images/me.jpg" alt="My picture">
-            <aside class="flex-1 md:p-10">
-                <p class="text-white mx-5 my-10">
-                    <div class="mb-3 text-white lg:text-3xl">
-                        <span class="text-yellow-300 text-4xl lg:text-6xl">M</span>y name is <strong class="text-cyan-400">Dagmawi Elias.</strong>
-                    </div>
-                    <div class="text-white lg:text-3xl">
-                        <span class="text-yellow-300 text-4xl lg:text-6xl">I</span>'m a Software Engineering student at the University of Addis Ababa Institute of Technology, Ethiopia. My portfolio highlights my technological expertise in [specific technologies], complemented by a track record of personal achievements that underscore my dedication and growth, both in life and in the realm of software development.
-                    </div>                    
-                </p>
-            </aside>
-        </div>
-    </main>
+    <main class="flex flex-col md:flex-row min-h-screen">
+        <figure class="flex md:w-1/2 items-center">
+            <img class="h-auto md:h-full w-full object-cover p-10" src="/src/Images/me.jpg" alt="My picture">
+        </figure>
+        <aside class="md:w-1/2 md:p-10 flex-row md:flex justify-center md:justify-start items-center">
+          <div class="text-white mx-5 my-10">
+            <div class="mb-3 text-white lg:text-3xl">
+              <span class="text-yellow-300 text-4xl lg:text-6xl">M</span>y name is <strong class="text-cyan-400">Dagmawi Elias.</strong>
+            </div>
+            <div class="text-white lg:text-3xl">
+              <span class="text-yellow-300 text-4xl lg:text-6xl">I</span>'m a Software Engineering student at the University of Addis Ababa Institute of Technology, Ethiopia. My portfolio highlights my technological expertise in [specific technologies], complemented by a track record of personal achievements that underscore my dedication and growth, both in life and in the realm of software development.
+            </div>
+          </div>
+        </aside>
+      </main>
+      
+      
 
-    <footer class="footer bg-gray-500 grid grid-cols-2 gap-4 mt-6 pt-6 pb-6 hidden sm:grid">
+    <footer class="footer bg-gray-500 grid grid-cols-2 gap-4 mt-auto pt-6 pb-6 hidden flex-shrink-0 sm:grid">
         <div class="grid gap-4">
             <div class="grid grid-cols-3 gap-4">
                 <a href="https://www.instagram.com/dagmawi_elias/" class="col-span-1 ">
@@ -69,7 +71,7 @@
                     <img src="/src/Images/twitter.svg" class="w-12 m-auto" alt="Twitter Icon">
                 </a>
                 <a href="https://www.linkedin.com/in/dagmawi-elias-842699242/" class="col-span-1">
-                    <img src="/src/Images/linkedin.svg" class="w-12 m-auto alt="Linkedin Icon">
+                    <img src="/src/Images/linkedin.svg" class="w-12 m-auto" alt="Linkedin Icon">
                 </a>
             </div>
         </div>
