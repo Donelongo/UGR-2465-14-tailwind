@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/x-icon" href="./Images/name-logo.png">
-    <script src="http://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/dist/output.css">
     <title>Home</title>
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -43,17 +43,18 @@
                 <svg onclick="onToggleMenu(this)" class="text-3xl cursor-pointer md:hidden" xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path fill="#ffffff" d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>            </div>
         </nav>
     </header>
-    <main>
+    <main class="m-2 ">
 
         
-<!-- ***************landscape**************** -->
+
         <div>
             <p class="text-white m-4">
                 <span class="text-yellow-300 text-4xl lg:text-6xl">P</span>hotography is my lens to the world, a hobby turned passion. Through the camera's eye, I capture stories, emotions, and fleeting moments. Exploring different angles and settings, I unravel the beauty in everyday scenes. Each click is a creative expression, a way to freeze time and share unique perspectives. In photography, I find an art form that allows me to convey emotions without words.  
             </p>
         </div>
-        
-        <div>
+<!-- ***************landscape**************** -->
+
+        <div class="flex justify-center w-full">
             <div class="flex items-center flex-row">
                 <div class="w-1/12 text-center m-5">
                     <button id="carousel-landscape-prev" class="btn">
@@ -90,7 +91,7 @@
 
 <!-- ***************portrait**************** -->
 
-        <div>
+        <div class="flex w-full justify-center">
             <div class="flex items-center flex-row">
                 <div class="w-1/12 text-center m-5">
                     <button id="carousel-portrait-prev" class="btn">
@@ -137,7 +138,7 @@
             </div>
         </div>
         </main>
-        <footer class="footer bg-gray-500 grid grid-cols-2 gap-4 mt-6 pt-6 pb-6 hidden sm:grid">
+        <footer class="footer bg-gray-500 grid-cols-2 gap-4 mt-6 pt-6 pb-6 hidden sm:grid ">
         <div class="grid gap-4">
             <div class="grid grid-cols-3 gap-4">
                 <a href="https://www.instagram.com/dagmawi_elias/" class="col-span-1 ">
@@ -147,7 +148,7 @@
                     <img src="/src/Images/twitter.svg" class="w-12 m-auto" alt="Twitter Icon">
                 </a>
                 <a href="https://www.linkedin.com/in/dagmawi-elias-842699242/" class="col-span-1">
-                    <img src="/src/Images/linkedin.svg" class="w-12 m-auto alt="Linkedin Icon">
+                    <img src="/src/Images/linkedin.svg" class="w-12 m-auto" alt="Linkedin Icon">
                 </a>
             </div>
         </div>
